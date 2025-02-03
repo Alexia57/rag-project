@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "rag project"
+version = "0.0.1"
+description = ""
+authors = [
+    "Alexia Prevot <alexiiaprevot@gmail.com>"
+    ]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.41.1"
+langchain = "^0.3.14"
+faiss-cpu = "^1.9.0.post1"
+torch = "^2.5.1"
+sentence-transformers = "^3.4.1"
+pymupdf = "^1.25.2"
+gradio = "^5.14.0"
+ollama = "^0.4.7"
+template = "^0.7.6"
+
+[tool.poetry.extras]
+qdrant = ["qdrant-client"]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
